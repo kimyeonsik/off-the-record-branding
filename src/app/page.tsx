@@ -1,13 +1,14 @@
 "use client";
 
-import { useState } from 'react'; // useState 훅 임포트
+import { useState } from 'react';
+import HCaptcha from '@hcaptcha/react-hcaptcha'; // hCaptcha 임포트
 
 export default function Home() {
-  const [email, setEmail] = useState('');
   const [featureRequest, setFeatureRequest] = useState('');
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
+  const [hcaptchaToken, setHcaptchaToken] = useState<string | null>(null); // hCaptcha 토큰 상태
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -15,13 +16,19 @@ export default function Home() {
     setMessage('');
     setIsSuccess(false);
 
+    if (!hcaptchaToken) {
+      setMessage('Please complete the hCaptcha verification.');
+      setLoading(false);
+      return;
+    }
+
     try {
       const response = await fetch('/api/waiting-list', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, featureRequest }),
+        body: JSON.stringify({ featureRequest, hcaptchaToken }), // hCaptcha 토큰 전송
       });
 
       const data = await response.json();
@@ -29,8 +36,8 @@ export default function Home() {
       if (response.ok) {
         setMessage(data.message);
         setIsSuccess(true);
-        setEmail('');
         setFeatureRequest('');
+        setHcaptchaToken(null); // 토큰 초기화
       } else {
         setMessage(data.message || 'Something went wrong.');
         setIsSuccess(false);
@@ -255,7 +262,7 @@ export default function Home() {
               <div className="bg-neutral-50 rounded-xl p-8 shadow-md">
                 <h3 className="text-lg font-semibold mb-4">Off The Record의 철학</h3>
                 <blockquote className="text-neutral-500 italic">
-                  {"\"우리는 프라이버시가 불신의 신호가 아닌, 건강한 개인 공간의 표현이라고 믿습니다. Off The Record는 단순한 앱이 아닌, 디지털 시대의 새로운 프라이버시 패러다임을 제시합니다. 완벽한 위장, 다층적 보안, 그리고 긴급 상황 대비까지 - 당신의 비밀은 그 어느 때보다 안전합니다.\""}
+                  {""우리는 프라이버시가 불신의 신호가 아닌, 건강한 개인 공간의 표현이라고 믿습니다. Off The Record는 단순한 앱이 아닌, 디지털 시대의 새로운 프라이버시 패러다임을 제시합니다. 완벽한 위장, 다층적 보안, 그리고 긴급 상황 대비까지 - 당신의 비밀은 그 어느 때보다 안전합니다.""}
                 </blockquote>
               </div>
             </div>
@@ -278,31 +285,29 @@ export default function Home() {
               초기 사용자만을 위한 특별한 혜택과 초대로만 운영될 Exclusive 서비스에 접근할 수 있는 초대를 받게 됩니다.
             </p>
             
-            <form className="space-y-4" onSubmit={handleSubmit}> {/* onSubmit 추가 */}
-              <input 
-                type="email" 
-                placeholder="이메일 주소를 입력해주세요" 
-                className="w-full px-5 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light"
-                value={email} // value 바인딩
-                onChange={(e) => setEmail(e.target.value)} // onChange 핸들러
-                required // 필수 필드
-              />
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <textarea 
                 placeholder="Off The Record에 추가되었으면 하는 기능이 있다면 알려주세요! (선택 사항)" 
                 rows={4} 
                 className="w-full px-5 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light resize-none"
-                value={featureRequest} // value 바인딩
-                onChange={(e) => setFeatureRequest(e.target.value)} // onChange 핸들러
+                value={featureRequest}
+                onChange={(e) => setFeatureRequest(e.target.value)}
               ></textarea>
+              <div className="flex justify-center">
+                <HCaptcha
+                  sitekey="b15c0c38-932c-461c-a73a-d14492fec236"
+                  onVerify={(token) => setHcaptchaToken(token)}
+                />
+              </div>
               <button 
                 type="submit" 
                 className="w-full bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-darker transition-colors"
-                disabled={loading} // 로딩 중 비활성화
+                disabled={loading}
               >
-                {loading ? '전송 중...' : '대기자 명단 가입하기'} {/* 로딩 텍스트 */}
+                {loading ? '전송 중...' : '대기자 명단 가입하기'}
               </button>
             </form>
-            {message && ( // 메시지 표시
+            {message && (
               <p className={`mt-4 text-sm ${isSuccess ? 'text-green-600' : 'text-red-600'}`}>
                 {message}
               </p>
