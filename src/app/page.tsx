@@ -34,7 +34,9 @@ export default function Home() {
       const data = await response.json();
 
       if (response.ok) {
-        setMessage(data.message);
+        setMessage(
+          `${data.message} ${data.inviteCode}\n\n${data.note}`
+        );
         setIsSuccess(true);
         setFeatureRequest('');
         setHcaptchaToken(null); // 토큰 초기화
@@ -67,7 +69,7 @@ export default function Home() {
             <a href="#security" className="hover:text-primary transition-colors">보안</a>
           </div>
           <button className="bg-primary text-white px-6 py-2 rounded-full hover:bg-primary-darker transition-colors">
-            대기자 명단 가입
+            서비스 코드 발급
           </button>
         </div>
       </nav>
@@ -85,7 +87,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-primary text-white px-10 py-5 rounded-lg text-lg font-semibold hover:bg-primary-darker transition-colors">
-              대기자 명단 가입하기
+              서비스 코드 발급받기
             </button>
             <button className="border border-primary text-primary px-10 py-5 rounded-lg text-lg font-semibold hover:bg-primary-dark hover:text-white transition-colors">
               자세히 알아보기
@@ -279,9 +281,9 @@ export default function Home() {
           </p>
           
           <div className="max-w-2xl mx-auto bg-background border border-neutral-200 rounded-xl p-8 shadow-lg">
-            <h3 className="text-2xl font-semibold mb-6">대기자 명단에 참여하고 독점 혜택을 받으세요!</h3>
+            <h3 className="text-2xl font-semibold mb-6">Exclusive 서비스 코드를 발급받고 독점 혜택을 받으세요!</h3>
             <p className="text-neutral-500 mb-6">
-              대기자 명단에 가입하시면 앱 출시 시 가장 먼저 소식을 받고,
+              Exclusive 서비스 코드를 발급받으시면 앱 출시 시 가장 먼저 소식을 받고,
               초기 사용자만을 위한 특별한 혜택과 초대로만 운영될 Exclusive 서비스에 접근할 수 있는 초대를 받게 됩니다.
             </p>
             
@@ -304,7 +306,7 @@ export default function Home() {
                 className="w-full bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-darker transition-colors"
                 disabled={loading}
               >
-                {loading ? '전송 중...' : '대기자 명단 가입하기'}
+                {loading ? '전송 중...' : '서비스 코드 발급받기'}
               </button>
             </form>
             {message && (
@@ -312,9 +314,7 @@ export default function Home() {
                 {message}
               </p>
             )}
-            <p className="text-sm text-neutral-500 mt-4">
-              * 귀하의 정보는 서비스 출시 알림 및 기능 개선을 위해서만 사용됩니다.
-            </p>
+            
           </div>
         </div>
       </section>
