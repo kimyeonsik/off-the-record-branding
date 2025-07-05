@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import HCaptcha from '@hcaptcha/react-hcaptcha'; // hCaptcha 임포트
+import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 export default function Home() {
   const [featureRequest, setFeatureRequest] = useState('');
@@ -262,7 +262,7 @@ export default function Home() {
               <div className="bg-neutral-50 rounded-xl p-8 shadow-md">
                 <h3 className="text-lg font-semibold mb-4">Off The Record의 철학</h3>
                 <blockquote className="text-neutral-500 italic">
-                  {""우리는 프라이버시가 불신의 신호가 아닌, 건강한 개인 공간의 표현이라고 믿습니다. Off The Record는 단순한 앱이 아닌, 디지털 시대의 새로운 프라이버시 패러다임을 제시합니다. 완벽한 위장, 다층적 보안, 그리고 긴급 상황 대비까지 - 당신의 비밀은 그 어느 때보다 안전합니다.""}
+                  &ldquo;우리는 프라이버시가 불신의 신호가 아닌, 건강한 개인 공간의 표현이라고 믿습니다. Off The Record는 단순한 앱이 아닌, 디지털 시대의 새로운 프라이버시 패러다임을 제시합니다. 완벽한 위장, 다층적 보안, 그리고 긴급 상황 대비까지 - 당신의 비밀은 그 어느 때보다 안전합니다.&rdquo;
                 </blockquote>
               </div>
             </div>
@@ -296,7 +296,7 @@ export default function Home() {
               <div className="flex justify-center">
                 <HCaptcha
                   sitekey="b15c0c38-932c-461c-a73a-d14492fec236"
-                  onVerify={(token) => setHcaptchaToken(token)}
+                  onVerify={(token: string) => setHcaptchaToken(token)}
                 />
               </div>
               <button 
