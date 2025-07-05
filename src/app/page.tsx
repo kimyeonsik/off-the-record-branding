@@ -301,15 +301,31 @@ export default function Home() {
               Exclusive 서비스 코드를 발급받으시면 앱 출시 후 해당 코드로 인증하여
               초기 사용자만을 위한 특별한 혜택과 초대로만 운영될 Exclusive 서비스에 접근할 수 있습니다.
             </p>
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+              <h4 className="font-semibold text-blue-800 mb-2">🔒 개인정보 보호 원칙</h4>
+              <p className="text-blue-700 text-sm">
+                프라이버시 앱을 만드는 저희는 이메일 주소나 기타 개인정보를 수집하지 않습니다. 
+                개인정보 수집 자체가 프라이버시 침해의 시작이라고 믿기 때문입니다. 
+                대신 고유한 서비스 코드를 통해 특별한 혜택을 제공하며, 이는 개인을 식별하지 않는 완전히 익명의 방식입니다.
+              </p>
+            </div>
             
             <form className="space-y-4" onSubmit={handleSubmit}>
-              <textarea 
-                placeholder="Off The Record에 추가되었으면 하는 기능이 있다면 알려주세요! (선택 사항)" 
-                rows={4} 
-                className="w-full px-5 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light resize-none"
-                value={featureRequest}
-                onChange={(e) => setFeatureRequest(e.target.value)}
-              ></textarea>
+              <div>
+                <label className="block text-sm font-medium text-neutral-700 mb-2">
+                  기능 제안 (선택사항)
+                </label>
+                <p className="text-xs text-neutral-500 mb-2">
+                  💡 이메일 주소는 수집하지 않습니다. 개인정보 보호가 저희의 핵심 가치이기 때문입니다.
+                </p>
+                <textarea 
+                  placeholder="Off The Record에 추가되었으면 하는 기능이 있다면 알려주세요!" 
+                  rows={4} 
+                  className="w-full px-5 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light resize-none"
+                  value={featureRequest}
+                  onChange={(e) => setFeatureRequest(e.target.value)}
+                ></textarea>
+              </div>
               <div className="flex justify-center">
                 <HCaptcha
                   sitekey="b15c0c38-932c-461c-a73a-d14492fec236"
