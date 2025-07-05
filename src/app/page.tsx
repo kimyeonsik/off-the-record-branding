@@ -89,10 +89,25 @@ export default function Home() {
             <button className="bg-primary text-white px-10 py-5 rounded-lg text-lg font-semibold hover:bg-primary-darker transition-colors">
               서비스 코드 발급받기
             </button>
-            <button className="border border-primary text-primary px-10 py-5 rounded-lg text-lg font-semibold hover:bg-primary-dark hover:text-white transition-colors">
+            <button className="border border-primary text-primary px-10 py-5 rounded-lg text-lg font-semibold hover:bg-primary-dark hover:text-white transition-colors"
+              onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}>
               자세히 알아보기
             </button>
           </div>
+        </div>
+      </section>
+
+      {/* Development Progress Section */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">개발 진척도</h2>
+          <p className="text-xl text-neutral-500 mb-8 max-w-2xl mx-auto">
+            Off The Record는 현재 활발히 개발 중입니다. 여러분의 기대를 뛰어넘는 서비스를 위해 최선을 다하고 있습니다.
+          </p>
+          <div className="w-full bg-neutral-200 rounded-full h-4 mb-4 mx-auto max-w-xl">
+            <div className="bg-primary h-4 rounded-full" style={{ width: '63%' }}></div>
+          </div>
+          <p className="text-lg font-semibold text-primary">63% 완료</p>
         </div>
       </section> {/* End of Hero Section */}
 
@@ -339,28 +354,28 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">제품</h4>
               <ul className="space-y-2 text-neutral-500">
-                <li><a href="#" className="hover:text-primary-light transition-colors">기능</a></li>
-                <li><a href="#" className="hover:text-primary-light transition-colors">보안</a></li>
+                <li><a href="#features" className="hover:text-primary-light transition-colors">기능</a></li>
+                <li><a href="#security" className="hover:text-primary-light transition-colors">보안</a></li>
               </ul>
             </div>
             
             <div>
               <h4 className="font-semibold mb-4">지원</h4>
               <ul className="space-y-2 text-neutral-500">
-                <li><a href="#" className="hover:text-primary-light transition-colors">고객센터</a></li>
-                <li><a href="#" className="hover:text-primary-light transition-colors">FAQ</a></li>
-                <li><a href="#" className="hover:text-primary-light transition-colors">개인정보처리방침</a></li>
+                <li><a href="#" onClick={() => alert('고객센터는 준비 중입니다.')} className="hover:text-primary-light transition-colors">고객센터</a></li>
+                <li><a href="#" onClick={() => alert('FAQ는 준비 중입니다.')} className="hover:text-primary-light transition-colors">FAQ</a></li>
+                <li><a href="#" onClick={() => alert('개인정보처리방침은 준비 중입니다.')} className="hover:text-primary-light transition-colors">개인정보처리방침</a></li>
               </ul>
             </div>
             
             <div>
               <h4 className="font-semibold mb-4">다운로드</h4>
               <div className="space-y-3">
-                <a href="#" className="flex items-center space-x-2 text-neutral-500 hover:text-primary-light transition-colors">
+                <a href="#" onClick={() => alert('iOS 앱은 준비 중입니다.')} className="flex items-center space-x-2 text-neutral-500 hover:text-primary-light transition-colors">
                   <span>📱</span>
                   <span>iOS App Store</span>
                 </a>
-                <a href="#" className="flex items-center space-x-2 text-neutral-500 hover:text-primary-light transition-colors">
+                <a href="#" onClick={() => alert('Google Play 앱은 준비 중입니다.')} className="flex items-center space-x-2 text-neutral-500 hover:text-primary-light transition-colors">
                   <span>🤖</span>
                   <span>Google Play</span>
                 </a>
