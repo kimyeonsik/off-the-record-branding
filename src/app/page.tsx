@@ -298,8 +298,8 @@ export default function Home() {
           <div className="max-w-2xl mx-auto bg-background border border-neutral-200 rounded-xl p-8 shadow-lg">
             <h3 className="text-2xl font-semibold mb-6">Exclusive 서비스 코드를 발급받고 독점 혜택을 받으세요!</h3>
             <p className="text-neutral-500 mb-6">
-              Exclusive 서비스 코드를 발급받으시면 앱 출시 시 가장 먼저 소식을 받고,
-              초기 사용자만을 위한 특별한 혜택과 초대로만 운영될 Exclusive 서비스에 접근할 수 있는 초대를 받게 됩니다.
+              Exclusive 서비스 코드를 발급받으시면 앱 출시 후 해당 코드로 인증하여
+              초기 사용자만을 위한 특별한 혜택과 초대로만 운영될 Exclusive 서비스에 접근할 수 있습니다.
             </p>
             
             <form className="space-y-4" onSubmit={handleSubmit}>
