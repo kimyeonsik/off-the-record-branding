@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
     }
 
     // hCaptcha 검증 성공 시 데이터 처리
-    const filePath = path.join(process.cwd(), 'data', 'waiting-list.json');
+    const filePath = path.join(process.cwd(), 'data', 'exclusive-codes.json');
     let waitingList = [];
 
     try {
@@ -61,8 +61,9 @@ export async function POST(req: NextRequest) {
     await fs.writeFile(filePath, JSON.stringify(waitingList, null, 2), 'utf-8');
 
     return NextResponse.json({ 
-      message: 'Successfully added to waiting list! Your exclusive invite code is:',
-      inviteCode: inviteCode // 초대 코드 반환
+      message: 'Exclusive 서비스 코드가 발급되었습니다! 귀하의 고유 코드는 다음과 같습니다:',
+      inviteCode: inviteCode, // 초대 코드 반환
+      note: '저희는 보안을 위해 개인을 식별할 수 있는 어떠한 정보도 저장하지 않습니다. 따라서 별도의 알림은 보내드리지 않습니다. 발급된 코드를 통해 서비스 진행 상황을 확인해주세요.'
     }, { status: 200 });
 
   } catch (error) {
