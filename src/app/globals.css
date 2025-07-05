@@ -2,31 +2,38 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1a202c; /* Darker for better contrast */
   
   /* Brand Colors */
-  --primary: #1e3a8a;
-  --primary-light: #3b82f6;
-  --primary-dark: #1e40af;
+  --primary: #4c51bf; /* A more vibrant purple-blue */
+  --primary-light: #667eea;
+  --primary-dark: #322653;
   
-  --secondary: #065f46;
-  --secondary-light: #10b981;
-  --secondary-dark: #047857;
+  --secondary: #38a169; /* A fresh green */
+  --secondary-light: #48bb78;
+  --secondary-dark: #276749;
   
-  --accent: #f59e0b;
-  --accent-light: #fbbf24;
-  --accent-dark: #d97706;
+  --accent: #ecc94b; /* A softer, more modern yellow */
+  --accent-light: #f6e05e;
+  --accent-dark: #b7791f;
   
-  --neutral: #374151;
-  --neutral-light: #6b7280;
-  --neutral-dark: #1f2937;
+  --neutral-50: #f7fafc;
+  --neutral-100: #edf2f7;
+  --neutral-200: #e2e8f0;
+  --neutral-300: #cbd5e0;
+  --neutral-400: #a0aec0;
+  --neutral-500: #718096;
+  --neutral-600: #4a5568;
+  --neutral-700: #2d3748;
+  --neutral-800: #1a202c;
+  --neutral-900: #171923;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter); /* Inter 폰트 변수 사용 */
+  --font-mono: var(--font-geist-mono); /* Geist Mono는 그대로 유지 */
   
   /* Brand Colors */
   --color-primary: var(--primary);
@@ -41,37 +48,51 @@
   --color-accent-light: var(--accent-light);
   --color-accent-dark: var(--accent-dark);
   
-  --color-neutral: var(--neutral);
-  --color-neutral-light: var(--neutral-light);
-  --color-neutral-dark: var(--neutral-dark);
+  --color-neutral-50: var(--neutral-50);
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-300: var(--neutral-300);
+  --color-neutral-400: var(--neutral-400);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-600: var(--neutral-600);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-800: var(--neutral-800);
+  --color-neutral-900: var(--neutral-900);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0f172a;
-    --foreground: #f1f5f9;
+    --background: #1a202c; /* Darker background for dark mode */
+    --foreground: #e2e8f0; /* Lighter foreground for dark mode */
     
     /* Dark theme brand colors */
-    --primary: #3b82f6;
-    --primary-light: #60a5fa;
-    --primary-dark: #1e40af;
+    --primary: #667eea;
+    --primary-light: #8099ff;
+    --primary-dark: #4c51bf;
     
-    --secondary: #10b981;
-    --secondary-light: #34d399;
-    --secondary-dark: #047857;
+    --secondary: #48bb78;
+    --secondary-light: #68d391;
+    --secondary-dark: #38a169;
     
-    --accent: #fbbf24;
-    --accent-light: #fcd34d;
-    --accent-dark: #f59e0b;
+    --accent: #f6e05e;
+    --accent-light: #fbd38d;
+    --accent-dark: #ecc94b;
     
-    --neutral: #64748b;
-    --neutral-light: #94a3b8;
-    --neutral-dark: #334155;
+    --neutral-50: #2d3748;
+    --neutral-100: #4a5568;
+    --neutral-200: #718096;
+    --neutral-300: #a0aec0;
+    --neutral-400: #cbd5e0;
+    --neutral-500: #e2e8f0;
+    --neutral-600: #edf2f7;
+    --neutral-700: #f7fafc;
+    --neutral-800: #ffffff;
+    --neutral-900: #ffffff;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-pretendard), sans-serif; /* Pretendard 폰트 적용 */
 }
