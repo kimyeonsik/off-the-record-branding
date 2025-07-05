@@ -44,8 +44,8 @@ export async function POST(req: NextRequest) {
     const inviteCode = crypto.randomUUID(); // UUID 생성
 
     const newItem = {
-      inviteCode, // 고유 초대 코드
-      featureRequest: featureRequest || null,
+      invite_code: inviteCode, // 고유 초대 코드
+      feature_request: featureRequest || null,
       timestamp: new Date().toISOString(),
     };
 
