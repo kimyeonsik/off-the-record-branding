@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
     try {
       const fileContent = await fs.readFile(filePath, 'utf-8');
       waitingList = JSON.parse(fileContent);
-    } catch (readError: any) {
+    } catch (readError: unknown) {
       if (readError.code === 'ENOENT') {
         waitingList = [];
       } else {
@@ -46,7 +46,7 @@ export async function POST(req: NextRequest) {
     }
 
     // 개인 정보 수집 없이 고유 초대 코드 생성
-    const crypto = require('crypto'); // Node.js 내장 모듈
+    import crypto from 'crypto'; // Node.js 내장 모듈
     const inviteCode = crypto.randomUUID(); // UUID 생성
 
     const newItem = {
