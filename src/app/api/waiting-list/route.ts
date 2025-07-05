@@ -49,7 +49,7 @@ export async function POST(req: NextRequest) {
       timestamp: new Date().toISOString(),
     };
 
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('exclusive_codes') // Supabase 테이블 이름
       .insert([newItem]);
 
