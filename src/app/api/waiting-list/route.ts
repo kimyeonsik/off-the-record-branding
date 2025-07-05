@@ -1,6 +1,5 @@
-import { promises as fs } from 'fs';
-import path from 'path';
 import { NextRequest, NextResponse } from 'next/server';
+import { createClient } from '@supabase/supabase-js';
 
 export async function POST(req: NextRequest) {
   try {
@@ -29,21 +28,15 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ message: 'hCaptcha verification failed. Please try again.' }, { status: 400 });
     }
 
-    // hCaptcha 검증 성공 시 데이터 처리
-    const filePath = path.join(process.cwd(), 'data', 'exclusive-codes.json');
-    let waitingList = [];
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-    try {
-      const fileContent = await fs.readFile(filePath, 'utf-8');
-      waitingList = JSON.parse(fileContent);
-    } catch (readError: unknown) {
-      if (typeof readError === 'object' && readError !== null && 'code' in readError && readError.code === 'ENOENT') {
-        waitingList = [];
-      } else {
-        console.error('Error reading waiting-list.json:', readError);
-        return NextResponse.json({ message: 'Failed to read data file.' }, { status: 500 });
-      }
+    if (!supabaseUrl || !supabaseAnonKey) {
+      console.error('Supabase URL or Anon Key is not set in environment variables.');
+      return NextResponse.json({ message: 'Server configuration error.' }, { status: 500 });
     }
+
+    const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
     // 개인 정보 수집 없이 고유 초대 코드 생성
     // eslint-disable-next-line @typescript-eslint/no-require-imports
@@ -56,9 +49,14 @@ export async function POST(req: NextRequest) {
       timestamp: new Date().toISOString(),
     };
 
-    waitingList.push(newItem);
+    const { data, error } = await supabase
+      .from('exclusive_codes') // Supabase 테이블 이름
+      .insert([newItem]);
 
-    await fs.writeFile(filePath, JSON.stringify(waitingList, null, 2), 'utf-8');
+    if (error) {
+      console.error('Error inserting into Supabase:', error);
+      return NextResponse.json({ message: 'Failed to save data.' }, { status: 500 });
+    }
 
     return NextResponse.json({ 
       message: 'Exclusive 서비스 코드가 발급되었습니다! 귀하의 고유 코드는 다음과 같습니다:',
