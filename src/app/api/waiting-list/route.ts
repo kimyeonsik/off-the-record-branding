@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
       const fileContent = await fs.readFile(filePath, 'utf-8');
       waitingList = JSON.parse(fileContent);
     } catch (readError: unknown) {
-      if (readError.code === 'ENOENT') {
+      if (typeof readError === 'object' && readError !== null && 'code' in readError && readError.code === 'ENOENT') {
         waitingList = [];
       } else {
         console.error('Error reading waiting-list.json:', readError);
