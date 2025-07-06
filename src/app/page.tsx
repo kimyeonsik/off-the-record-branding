@@ -68,9 +68,9 @@ export default function Home() {
             <a href="#features" className="hover:text-primary transition-colors">기능</a>
             <a href="#security" className="hover:text-primary transition-colors">보안</a>
           </div>
-          <button className="bg-primary text-white px-6 py-2 rounded-full hover:bg-primary-darker transition-colors">
-            서비스 코드 발급
-          </button>
+          <a href="#join-us" className="bg-primary text-white px-6 py-2 rounded-full hover:bg-primary-darker transition-colors">
+            Early Access
+          </a>
         </div>
       </nav>
 
@@ -86,12 +86,12 @@ export default function Home() {
             Off The Record는 당신의 프라이버시를 위한 새로운 패러다임을 제시합니다.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-primary text-white px-10 py-5 rounded-lg text-lg font-semibold hover:bg-primary-darker transition-colors">
-              서비스 코드 발급받기
-            </button>
+            <a href="#join-us" className="bg-primary text-white px-10 py-5 rounded-lg text-lg font-semibold hover:bg-primary-darker transition-colors">
+              Early Access
+            </a>
             <button className="border border-primary text-primary px-10 py-5 rounded-lg text-lg font-semibold hover:bg-primary-dark hover:text-white transition-colors"
               onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}>
-              자세히 알아보기
+              Learn More
             </button>
           </div>
         </div>
@@ -358,7 +358,7 @@ export default function Home() {
                 className="w-full bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-darker transition-colors"
                 disabled={loading}
               >
-                {loading ? '전송 중...' : '서비스 코드 발급받기'}
+                {loading ? '전송 중...' : 'Get Early Access Code'}
               </button>
             </form>
             {message && (
