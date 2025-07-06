@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
     // 개인 정보 수집 없이 고유 초대 코드 생성
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     const crypto = require('crypto'); // Node.js 내장 모듈
-    const inviteCode = crypto.randomUUID(); // UUID 생성
+    const inviteCode = crypto.randomUUID().toUpperCase(); // UUID 생성 후 대문자로 변환
 
     const newItem = {
       invite_code: inviteCode, // 고유 초대 코드

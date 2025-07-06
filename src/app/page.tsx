@@ -97,20 +97,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Development Progress Section */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">개발 진척도</h2>
-          <p className="text-xl text-neutral-500 mb-8 max-w-2xl mx-auto">
-            Off The Record는 현재 활발히 개발 중입니다. 여러분의 기대를 뛰어넘는 서비스를 위해 최선을 다하고 있습니다.
-          </p>
-          <div className="w-full bg-neutral-200 rounded-full h-4 mb-4 mx-auto max-w-xl">
-            <div className="bg-primary h-4 rounded-full" style={{ width: '63%' }}></div>
-          </div>
-          <p className="text-lg font-semibold text-primary">63% 완료</p>
-        </div>
-      </section> {/* End of Hero Section */}
-
       {/* Privacy Breach Cases Section */}
       <section className="py-20 px-4 bg-neutral-100">
         <div className="container mx-auto text-center">
@@ -119,23 +105,44 @@ export default function Home() {
             디지털 시대, 우리는 알게 모르게 수많은 프라이버시 침해 위험에 노출되어 있습니다.
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Case 1: 특수 관계인 (애인/배우자) 에 대한 위기 상황 - 가짜 비밀번호 */}
             <div className="bg-background border border-neutral-200 rounded-xl p-8 shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">📱 스마트폰 공유의 함정</h3>
+              <h3 className="text-xl font-semibold mb-3">🔐 가짜 비밀번호, 진짜 비밀을 지키다</h3>
               <p className="text-neutral-500">
-                가족이나 친구와 스마트폰을 공유하다가, 의도치 않게 개인적인 메시지나 사진이 노출된 경험이 있으신가요?
+                <span className="font-bold text-neutral-700">상황:</span> 연인이 내가 늘 사용하는 비밀번호를 알고 있어 불시에 내 폰을 확인하려 합니다.<br />
+                <span className="font-bold text-neutral-700">조치:</span> Off The Record 앱에 가짜 비밀번호를 입력합니다.<br />
+                <span className="font-bold text-neutral-700">해결:</span> 연인은 일반 메모만 보고 아무 의심 없이 돌아섭니다. 당신의 서프라이즈 계획이나 진짜 비밀은 안전하게 지켜집니다.
               </p>
             </div>
+
+            {/* Case 2: 특수 관계인 (애인/배우자) 에 대한 위기 상황 - Kill Switch */}
             <div className="bg-background border border-neutral-200 rounded-xl p-8 shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">💬 민감한 대화 기록</h3>
+              <h3 className="text-xl font-semibold mb-3">💥 Kill Switch: 궁극의 방어</h3>
               <p className="text-neutral-500">
-                건강, 재정, 가족 문제 등 민감한 대화 내용이 앱에 기록되어 불안했던 적은 없으신가요?
+                <span className="font-bold text-neutral-700">상황:</span> 연인이 당신의 앱 비밀번호가 가짜라고 의심하며 진짜 비밀번호를 강하게 요구하는 절체절명의 순간입니다.<br />
+                <span className="font-bold text-neutral-700">조치:</span> 당신은 Kill Switch 비밀번호를 알려줍니다.<br />
+                <span className="font-bold text-neutral-700">해결:</span> 앱 내의 모든 비밀 정보가 즉시 삭제되어 당신의 프라이버시는 완벽하게 지켜지고, 상대는 당신이 프리미엄 기능을 사용하지 못한다고 생각하게 됩니다.
               </p>
             </div>
+
+            {/* Case 3: 특수 관계인 (애인/배우자) 에 대한 위기 상황 - 지긋지긋한 해명 */}
             <div className="bg-background border border-neutral-200 rounded-xl p-8 shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">💡 사업 아이디어 유출</h3>
+              <h3 className="text-xl font-semibold mb-3">😮‍💨 지긋지긋한 해명, 이제 그만</h3>
               <p className="text-neutral-500">
-                중요한 사업 아이디어나 기밀 정보가 디지털 공간에서 안전하게 보호되고 있다고 확신하시나요?
+                <span className="font-bold text-neutral-700">상황:</span> 샤워하고 나왔더니, 연인이 직장 동료에게 온 평범한 메시지를 보고 추궁하며 해명을 요구합니다.<br />
+                <span className="font-bold text-neutral-700">조치:</span> Off The Record에 저장된 비밀 대화나 기록 덕분에, 당신은 더 이상 불필요한 오해에 대해 해명할 필요가 없습니다.<br />
+                <span className="font-bold text-neutral-700">해결:</span> 사적인 대화가 노출되지 않아 불필요한 감정 소모와 관계의 갈등을 피할 수 있습니다.
+              </p>
+            </div>
+
+            {/* Case 4: 친구, 지인, 직장 동료 등에 대한 비밀 노출 - 카플레이 알림 */}
+            <div className="bg-background border border-neutral-200 rounded-xl p-8 shadow-sm">
+              <h3 className="text-xl font-semibold mb-3">🤫 카플레이 알림, 의심을 피하다</h3>
+              <p className="text-neutral-500">
+                <span className="font-bold text-neutral-700">상황:</span> 직장 동료와 카풀 중, 카플레이 화면에 비밀 채팅 메시지가 알림으로 뜹니다.<br />
+                <span className="font-bold text-neutral-700">조치:</span> Off The Record는 이 알림을 '[광고] 오늘까지만 AI 구독 20% 세일'과 같은 평범한 광고 문구로 위장하여 보여줍니다.<br />
+                <span className="font-bold text-neutral-700">해결:</span> 동료는 아무 의심 없이 광고로 인식하고, 당신의 비밀 채팅은 안전하게 보호됩니다.
               </p>
             </div>
           </div>
@@ -156,7 +163,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-background border border-neutral-200 rounded-xl p-8 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
               <div className="w-12 h-12 bg-primary-light/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-primary text-xl">🔒</span>
@@ -284,6 +291,20 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Development Progress Section */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">개발 진척도</h2>
+          <p className="text-xl text-neutral-500 mb-8 max-w-2xl mx-auto">
+            Off The Record는 현재 활발히 개발 중입니다. 여러분의 기대를 뛰어넘는 서비스를 위해 최선을 다하고 있습니다.
+          </p>
+          <div className="w-full bg-neutral-200 rounded-full h-4 mb-4 mx-auto max-w-xl">
+            <div className="bg-primary h-4 rounded-full" style={{ width: '63%' }}></div>
+          </div>
+          <p className="text-lg font-semibold text-primary">63% 완료</p>
         </div>
       </section>
 
