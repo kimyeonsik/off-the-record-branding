@@ -141,7 +141,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-3">🤫 카플레이 알림, 의심을 피하다</h3>
               <p className="text-neutral-500">
                 <span className="font-bold text-neutral-700">상황:</span> 직장 동료와 카풀 중, 카플레이 화면에 비밀 채팅 메시지가 알림으로 뜹니다.<br />
-                <span className="font-bold text-neutral-700">조치:</span> Off The Record는 이 알림을 '[광고] 오늘까지만 AI 구독 20% 세일'과 같은 평범한 광고 문구로 위장하여 보여줍니다.<br />
+                <span className="font-bold text-neutral-700">조치:</span> Off The Record는 이 알림을 &apos;[광고] 오늘까지만 AI 구독 20% 세일&apos;과 같은 평범한 광고 문구로 위장하여 보여줍니다.<br />
                 <span className="font-bold text-neutral-700">해결:</span> 동료는 아무 의심 없이 광고로 인식하고, 당신의 비밀 채팅은 안전하게 보호됩니다.
               </p>
             </div>
