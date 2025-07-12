@@ -1,0 +1,97 @@
+{
+  "Navigation": {
+    "features": "기능",
+    "security": "보안",
+    "earlyAccess": "Early Access"
+  },
+  "Hero": {
+    "title": "당신의 폰을<br /><span class=\"text-primary\">'누가' 보고 있나요?</span>",
+    "subtitle": "\"폰 좀 줘봐.\" 이 한마디에 심장이 철렁한다면, <br />당신에게는 Off The Record가 필요합니다.",
+    "ctaPrimary": "Early Access",
+    "ctaSecondary": "Learn More"
+  },
+  "PrivacyBreach": {
+    "title": "이런 순간, 당신도 있었나요?",
+    "subtitle": "피할 수 없다면, 완벽하게 숨기세요.",
+    "case1_title": "🔐 보여줘도 안전한, 두 번째 비밀 공간",
+    "case1_situation": "\"폰 좀 줘봐.\" 연인이 내 비밀번호를 누르고 핸드폰을 검사하기 시작합니다.",
+    "case1_action": "Off The Record 앱에 가짜 비밀번호를 입력합니다.",
+    "case1_resolution": "연인은 일반 메모만 보고 아무 의심 없이 돌아섭니다. 당신의 서프라이즈 계획이나 진짜 비밀은 안전하게 지켜집니다.",
+    "case2_title": "💥 Kill Switch: 궁극의 방어",
+    "case2_situation": "연인이 당신의 앱 비밀번호가 가짜라고 의심하며 진짜 비밀번호를 강하게 요구하는 절체절명의 순간입니다.",
+    "case2_action": "당신은 Kill Switch 비밀번호를 알려줍니다.",
+    "case2_resolution": "앱 내의 모든 비밀 정보가 즉시 삭제되어 당신의 프라이버시는 완벽하게 지켜지고, 상대는 당신이 프리미엄 기능을 사용하지 못한다고 생각하게 됩니다.",
+    "case3_title": "😮‍💨 친구와의 카톡까지 해명해야 하는 연애",
+    "case3_situation": "\"이 시간에 누구야?\" 직장 동료에게 온 업무 카톡 하나에 집안 분위기가 싸늘해집니다.",
+    "case3_action": "Off The Record에 저장된 비밀 대화나 기록 덕분에, 당신은 더 이상 불필요한 오해에 대해 해명할 필요가 없습니다.",
+    "case3_resolution": "사적인 대화가 노출되지 않아 불필요한 감정 소모와 관계의 갈등을 피할 수 있습니다.",
+    "case4_title": "🤫 카플레이 알림, 의심을 피하다",
+    "case4_situation": "직장 동료와 카풀 중, 카플레이 화면에 비밀 채팅 메시지가 알림으로 뜹니다.",
+    "case4_action": "Off The Record는 이 알림을 '[광고] 오늘까지만 30% 할인 쿠폰 제공'과 같은 평범한 광고 문구로 위장하여 보여줍니다.",
+    "case4_resolution": "동료는 아무 의심 없이 광고로 인식하고, 당신의 비밀 채팅은 안전하게 보호됩니다.",
+    "conclusion": "Off The Record는 당신의 소중한 프라이버시를 지키기 위해 탄생했습니다. 사랑하지만, 사생활은 존중받아야 합니다. Off The Record는 당신의 건강한 개인 공간을 응원합니다."
+  },
+  "Features": {
+    "title": "프라이버시를 위한 핵심 기능",
+    "subtitle": "Off The Record는 당신의 디지털 생활을 안전하게 보호하기 위한 강력한 도구들을 제공합니다.",
+    "feature1_title": "다층적 저장소 시스템",
+    "feature1_description": "일반 메모와 비밀 메모를 분리하여, 겉으로는 평범한 메모 앱처럼 보입니다.",
+    "feature2_title": "다층적 보안 시스템",
+    "feature2_description": "기본 PIN부터 이중 비밀번호, Kill Switch까지, 당신의 비밀을 완벽하게 보호합니다.",
+    "feature3_title": "암호화 채팅",
+    "feature3_description": "Signal 프로토콜 기반의 End-to-End 암호화로 안전한 대화를 지원합니다.",
+    "feature4_title": "구독 위장 시스템",
+    "feature4_description": "프리미엄 기능을 사용하면서도 기본 사용자처럼 위장하여 의심을 피합니다. 혹은 광고를 유지하여 구독중임을 숨깁니다.",
+    "feature5_title": "침입 감지",
+    "feature5_description": "PIN 오류 시 시도 시간과 영상/음성을 기록하여 무단 접근을 감지합니다.",
+    "feature6_title": "서버 무저장 원칙",
+    "feature6_description": "모든 대화와 콘텐츠는 서버에 저장되지 않고, 오직 당신의 기기에만 안전하게 보관됩니다."
+  },
+  "Security": {
+    "title": "우리의 약속: 진정한 프라이버시 보호",
+    "subtitle": "Off The Record는 단순한 콘텐츠 보호를 넘어, 프라이버시를 원한다는 사실 자체도 보호합니다. 당신의 디지털 생활을 안전하게 지키기 위한 우리의 핵심 원칙입니다.",
+    "principle1_title": "서버 무저장 원칙 (Zero-Knowledge)",
+    "principle1_description": "모든 대화와 콘텐츠는 서버에 저장되지 않습니다. 오직 당신의 기기에만 안전하게 보관되며, 설령 서버가 해킹당해도 당신의 비밀은 노출되지 않습니다.",
+    "principle2_title": "강력한 클라이언트 측 암호화",
+    "principle2_description": "당신의 모든 데이터는 기기 내에서 AES-256-CBC와 같은 최신 암호화 기술로 즉시 암호화됩니다. PIN은 암호화 키를 파생시키는 데 사용될 뿐, 절대 저장되지 않으며, 키 또한 메모리에서 안전하게 관리됩니다.",
+    "principle3_title": "다층적 보안 시스템 & 메모리 보호",
+    "principle3_description": "기본 PIN, 이중 비밀번호, 그리고 위급 상황을 위한 Kill Switch까지. 민감한 암호화 키는 앱이 실행되는 동안에도 메모리에서 안전하게 보호되며, 사용 후 즉시 삭제됩니다.",
+    "philosophy_title": "Off The Record의 철학",
+    "philosophy_quote": "“우리는 프라이버시가 불신의 신호가 아닌, 건강한 개인 공간의 표현이라고 믿습니다. Off The Record는 단순한 앱이 아닌, 디지털 시대의 새로운 프라이버시 패러다임을 제시합니다. 완벽한 위장, 다층적 보안, 그리고 긴급 상황 대비까지 - 당신의 비밀은 그 어느 때보다 안전합니다.”"
+  },
+  "Development": {
+    "title": "개발 진척도",
+    "subtitle": "Off The Record는 현재 활발히 개발 중입니다. 여러분의 기대를 뛰어넘는 서비스를 위해 최선을 다하고 있습니다.",
+    "progressText": "63% 완료"
+  },
+  "JoinUs": {
+    "title": "함께 만들어가요, 당신의 프라이버시 앱을!",
+    "subtitle": "Off The Record는 현재 개발 중입니다. 당신의 소중한 의견과 참여가 더 나은 앱을 만듭니다.",
+    "form_title": "Exclusive 서비스 코드를 발급받고 독점 혜택을 받으세요!",
+    "form_description": "Exclusive 서비스 코드를 발급받으시면 앱 출시 후 해당 코드로 인증하여 초기 사용자만을 위한 특별한 혜택과 초대로만 운영될 Exclusive 서비스에 접근할 수 있습니다.",
+    "privacy_title": "🔒 개인정보 보호 원칙",
+    "privacy_description": "프라이버시 앱을 만드는 저희는 이메일 주소나 기타 개인정보를 수집하지 않습니다. 개인정보 수집 자체가 프라이버시 침해의 시작이라고 믿기 때문입니다. 대신 고유한 서비스 코드를 통해 특별한 혜택을 제공하며, 이는 개인을 식별하지 않는 완전히 익명의 방식입니다.",
+    "feature_request_label": "기능 제안 (선택사항)",
+    "feature_request_note": "💡 이메일 주소는 수집하지 않습니다. 개인정보 보호가 저희의 핵심 가치이기 때문입니다.",
+    "feature_request_placeholder": "Off The Record에 추가되었으면 하는 기능이 있다면 알려주세요!",
+    "hcaptcha_missing": "Please complete the hCaptcha verification.",
+    "submit_button": "Get Early Access Code",
+    "submit_loading": "전송 중...",
+    "success_message": "{message} {inviteCode}\n\n{note}",
+    "error_message": "{message}",
+    "generic_error": "Something went wrong.",
+    "connection_error": "Failed to connect to the server."
+  },
+  "Footer": {
+    "tagline": "완벽한 위장, 완벽한 비밀.<br />디지털 시대의 새로운 프라이버시 패러다임.",
+    "product": "제품",
+    "support": "지원",
+    "downloads": "다운로드",
+    "support_center": "고객센터",
+    "faq": "FAQ",
+    "privacy_policy": "개인정보처리방침",
+    "ios_app": "iOS App Store",
+    "android_app": "Google Play",
+    "copyright": "© 2024 Off The Record. 모든 권리 보유."
+  }
+}

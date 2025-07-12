@@ -1,0 +1,97 @@
+{
+  "Navigation": {
+    "features": "Features",
+    "security": "Security",
+    "earlyAccess": "Early Access"
+  },
+  "Hero": {
+    "title": "Who's<br /><span class=\"text-primary\">really</span> looking at your phone?",
+    "subtitle": "If your heart drops when you hear \"Let me see your phone,\"<br />you need Off The Record.",
+    "ctaPrimary": "Early Access",
+    "ctaSecondary": "Learn More"
+  },
+  "PrivacyBreach": {
+    "title": "Ever been in a moment like this?",
+    "subtitle": "Your partner's distrust leads to phone checks. If you can't avoid it, hide it perfectly.",
+    "case1_title": "🔐 A Second, Secure Space They Can't Find",
+    "case1_situation": "<strong>Situation:</strong> \"Let me see your phone.\" Your partner enters your password and starts searching.",
+    "case1_action": "<strong>Action:</strong> You enter the decoy password for Off The Record.",
+    "case1_resolution": "<strong>Resolution:</strong> They only see regular notes and leave without suspicion. Your real secrets remain safe.",
+    "case2_title": "💥 Kill Switch: The Ultimate Defense",
+    "case2_situation": "<strong>Situation:</strong> The moment of truth. Your partner suspects the password is fake and demands the real one.",
+    "case2_action": "<strong>Action:</strong> You provide the Kill Switch password.",
+    "case2_resolution": "<strong>Resolution:</strong> All secret data in the app is instantly erased. Your privacy is completely protected, and they just think you're not using the premium features.",
+    "case3_title": "😮‍💨 Tired of Explaining Every Single Chat?",
+    "case3_situation": "<strong>Situation:</strong> \"Who's this? Why are they texting you so late?\" A simple message from a coworker chills the air.",
+    "case3_action": "<strong>Action:</strong> With your secret conversations stored in Off The Record, you no longer have to explain away baseless accusations.",
+    "case3_resolution": "<strong>Resolution:</strong> You avoid emotional exhaustion and relationship conflicts by keeping private conversations private.",
+    "case4_title": "🤫 Dodge Suspicion on CarPlay",
+    "case4_situation": "<strong>Situation:</strong> You're carpooling with a coworker when a secret chat notification pops up on the CarPlay screen.",
+    "case4_action": "<strong>Action:</strong> Off The Record disguises the notification as a harmless ad, like \"[Ad] 20% off AI subscription until today.\"",
+    "case4_resolution": "<strong>Resolution:</strong> Your coworker dismisses it as an ad, and your secret chat remains secure.",
+    "conclusion": "Off The Record was created to protect your precious privacy from these problems. We believe that even in a loving relationship, you deserve a personal space. Off The Record supports your right to a healthy, private life."
+  },
+  "Features": {
+    "title": "Core Features for Your Privacy",
+    "subtitle": "Off The Record provides powerful tools to safeguard your digital life.",
+    "feature1_title": "Multi-Layered Storage System",
+    "feature1_description": "Separates regular and secret notes, appearing as a simple memo app on the surface.",
+    "feature2_title": "Multi-Layered Security System",
+    "feature2_description": "From a basic PIN to a dual password and a Kill Switch, we perfectly protect your secrets.",
+    "feature3_title": "Encrypted Chat (Coming Soon)",
+    "feature3_description": "Supports secure conversations with end-to-end encryption based on the Signal protocol.",
+    "feature4_title": "Subscription Disguise System (Coming Soon)",
+    "feature4_description": "Appear as a basic user even while using premium features to avoid suspicion, or keep ads to hide your subscription.",
+    "feature5_title": "Intrusion Detection (Coming Soon)",
+    "feature5_description": "Detects unauthorized access by recording the time, video, and audio of incorrect PIN entries.",
+    "feature6_title": "Zero-Server-Storage Principle",
+    "feature6_description": "All conversations and content are not stored on our servers, only securely on your device."
+  },
+  "Security": {
+    "title": "Our Promise: True Privacy Protection",
+    "subtitle": "Off The Record goes beyond just protecting content; it protects the very fact that you desire privacy. These are our core principles for securing your digital life.",
+    "principle1_title": "Zero-Knowledge Principle",
+    "principle1_description": "All conversations and content are not stored on our servers. They are kept securely only on your device. Even if our servers are hacked, your secrets will not be exposed.",
+    "principle2_title": "Strong Client-Side Encryption",
+    "principle2_description": "All your data is immediately encrypted on your device with the latest technology like AES-256-CBC. The PIN is only used to derive the encryption key and is never stored. The key is also managed securely in memory.",
+    "principle3_title": "Multi-Layered Security & Memory Protection",
+    "principle3_description": "From a basic PIN and dual passwords to a Kill Switch for emergencies. Sensitive encryption keys are protected in memory while the app is running and are immediately erased after use.",
+    "philosophy_title": "The Off The Record Philosophy",
+    "philosophy_quote": "“We believe privacy is not a sign of distrust, but an expression of healthy personal space. Off The Record is not just an app; it's a new paradigm for privacy in the digital age. With perfect disguise, multi-layered security, and emergency preparedness - your secrets are safer than ever.”"
+  },
+  "Development": {
+    "title": "Development Progress",
+    "subtitle": "Off The Record is currently under active development. We are doing our best to exceed your expectations.",
+    "progressText": "63% Complete"
+  },
+  "JoinUs": {
+    "title": "Let's Build Your Privacy App, Together!",
+    "subtitle": "Off The Record is currently in development. Your valuable feedback and participation will help make it better.",
+    "form_title": "Get Your Exclusive Service Code and Receive Special Benefits!",
+    "form_description": "By receiving an Exclusive Service Code, you can authenticate with it after the app launch to access special benefits for early users and an invite-only Exclusive Service.",
+    "privacy_title": "🔒 Privacy Protection Principle",
+    "privacy_description": "As a privacy-focused app, we do not collect email addresses or other personal information. We believe that collecting personal data is the beginning of privacy invasion. Instead, we provide special benefits through a unique service code, which is a completely anonymous method that does not identify individuals.",
+    "feature_request_label": "Feature Suggestion (Optional)",
+    "feature_request_note": "💡 We do not collect email addresses. Protecting your privacy is our core value.",
+    "feature_request_placeholder": "Let us know if there's a feature you'd like to see in Off The Record!",
+    "hcaptcha_missing": "Please complete the hCaptcha verification.",
+    "submit_button": "Get Early Access Code",
+    "submit_loading": "Submitting...",
+    "success_message": "{message} {inviteCode}\n\n{note}",
+    "error_message": "{message}",
+    "generic_error": "Something went wrong.",
+    "connection_error": "Failed to connect to the server."
+  },
+  "Footer": {
+    "tagline": "Perfect disguise, perfect secrecy.<br />A new privacy paradigm for the digital age.",
+    "product": "Product",
+    "support": "Support",
+    "downloads": "Downloads",
+    "support_center": "Support Center",
+    "faq": "FAQ",
+    "privacy_policy": "Privacy Policy",
+    "ios_app": "iOS App Store",
+    "android_app": "Google Play",
+    "copyright": "© 2024 Off The Record. All rights reserved."
+  }
+}
