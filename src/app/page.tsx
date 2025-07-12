@@ -189,7 +189,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-accent-light/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-accent text-xl">💬</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">암호화 채팅 (예정)</h3>
+              <h3 className="text-xl font-semibold mb-3">암호화 채팅</h3>
               <p className="text-neutral-500">
                 Signal 프로토콜 기반의 End-to-End 암호화로 안전한 대화를 지원합니다.
               </p>
@@ -199,7 +199,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-primary-light/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-primary text-xl">🎭</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">구독 위장 시스템 (예정)</h3>
+              <h3 className="text-xl font-semibold mb-3">구독 위장 시스템</h3>
               <p className="text-neutral-500">
                 프리미엄 기능을 사용하면서도 기본 사용자처럼 위장하여 의심을 피합니다. 혹은 광고를 유지하여 구독중임을 숨깁니다.
               </p>
@@ -209,7 +209,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-secondary-light/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-secondary text-xl">🔍</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">침입 감지 (예정)</h3>
+              <h3 className="text-xl font-semibold mb-3">침입 감지</h3>
               <p className="text-neutral-500">
                 PIN 오류 시 시도 시간과 영상/음성을 기록하여 무단 접근을 감지합니다.
               </p>
