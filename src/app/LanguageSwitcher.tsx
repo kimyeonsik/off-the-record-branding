@@ -7,22 +7,31 @@ export default function LanguageSwitcher() {
   const { i18n } = useTranslation();
   const router = useRouter();
 
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const newLang = e.target.value;
-    i18n.changeLanguage(newLang);
-    // You might want to refresh the page or update the URL to reflect the language change
-    // For App Router, you might need to use router.refresh() or navigate to a new path
-    router.refresh(); // This will re-render the current route
+  const handleLanguageChange = (lang: string) => {
+    i18n.changeLanguage(lang);
+    router.refresh();
   };
 
   return (
-    <select 
-      value={i18n.language} 
-      onChange={handleChange}
-      className="bg-transparent text-neutral-500 border border-neutral-300 rounded-md p-1 text-sm"
-    >
-      <option value="en">English</option>
-      <option value="ko">한국어</option>
-    </select>
+    <div className="flex space-x-4">
+      <button 
+        onClick={() => handleLanguageChange('ko')}
+        className={`hover:text-primary transition-colors ${i18n.language === 'ko' ? 'text-primary font-semibold' : 'text-neutral-500'}`}
+      >
+        한국어
+      </button>
+      <button 
+        onClick={() => handleLanguageChange('en')}
+        className={`hover:text-primary transition-colors ${i18n.language === 'en' ? 'text-primary font-semibold' : 'text-neutral-500'}`}
+      >
+        English
+      </button>
+      <button 
+        onClick={() => handleLanguageChange('ja')}
+        className={`hover:text-primary transition-colors ${i18n.language === 'ja' ? 'text-primary font-semibold' : 'text-neutral-500'}`}
+      >
+        日本語
+      </button>
+    </div>
   );
 }

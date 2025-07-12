@@ -1,0 +1,97 @@
+{
+  "Navigation": {
+    "features": "機能",
+    "security": "セキュリティ",
+    "earlyAccess": "アーリーアクセス"
+  },
+  "Hero": {
+    "title": "あなたのスマホを<br /><span class=\"text-primary\">「誰が」</span>見ていますか？",
+    "subtitle": "「スマホ見せて」この一言にドキッとするなら、<br />あなたには<b>Off The Record</b>が必要です。",
+    "ctaPrimary": "アーリーアクセス",
+    "ctaSecondary": "詳しく見る"
+  },
+  "PrivacyBreach": {
+    "title": "こんな瞬間、あなたにもありませんか？",
+    "subtitle": "避けられないなら、完璧に隠しましょう。",
+    "case1_title": "🔐 見せても安全な、もう一つの秘密空間",
+    "case1_situation": "「スマホ見せて」恋人がいつものパスワードを入力して、スマホをチェックし始めます。",
+    "case1_action": "でも実は、恋人が知っているパスワードは偽のパスワードなんです。",
+    "case1_resolution": "恋人は普通のメモしか見えず、何も疑うことなく安心して立ち去ります。あなたのサプライズ計画や本当の秘密は完全に守られています。",
+    "case2_title": "💥 キルスイッチ：究極の防御",
+    "case2_situation": "恋人があなたのアプリのパスワードが偽物だと疑い、本物のパスワードを激しく要求してくる絶体絶命の瞬間です。",
+    "case2_action": "でも、全く慌てる必要はありません。",
+    "case2_resolution": "どんな方法を使っても偽物と本物のパスワードを見分けることは不可能です。相手はあなたがプレミアム機能を使っているということすら確認できません。",
+    "case3_title": "😮‍💨 LINEまで説明しなければならない恋愛",
+    "case3_situation": "「この時間に誰から？」職場の同僚からの何気ない業務LINEひとつで、家の空気が一瞬で凍りつきます。",
+    "case3_action": "Off The Recordの秘密会話機能と偽装通知があれば、もう無駄な誤解について一々説明する必要はありません。",
+    "case3_resolution": "プライベートな会話が外に漏れることがないので、不必要な心の疲れや恋人との衝突を避けることができます。",
+    "case4_title": "🤫 CarPlay通知、疑いを避ける",
+    "case4_situation": "職場の同僚との相乗り中、CarPlay画面に秘密のチャット通知がポップアップ表示されます。",
+    "case4_action": "Off The Recordは、この通知を「【広告】本日限定30%オフクーポン配布中」のような何の変哲もない広告として偽装表示します。",
+    "case4_resolution": "同僚は単なる広告だと思って気にも留めず、あなたの秘密のチャットは完全に守られます。",
+    "conclusion": "Off The Recordは、あなたの大切なプライバシーを守るために誕生しました。愛していても、プライベートは尊重されるべきです。Off The Recordは、あなたの健全な個人空間を応援します。"
+  },
+  "Features": {
+    "title": "プライバシーのための核心機能",
+    "subtitle": "Off The Recordは、あなたのデジタルライフを安全に保護するための強力なツールを提供します。",
+    "feature1_title": "多層ストレージシステム",
+    "feature1_description": "通常のメモと秘密のメモを分離し、表面上は普通のメモアプリのように見えます。",
+    "feature2_title": "多層セキュリティシステム",
+    "feature2_description": "基本PINから二重パスワード、キルスイッチまで、あなたの秘密を完璧に保護します。",
+    "feature3_title": "暗号化チャット（近日公開）",
+    "feature3_description": "Signalプロトコルベースのエンドツーエンド暗号化で安全な会話をサポートします。",
+    "feature4_title": "サブスクリプション偽装システム（近日公開）",
+    "feature4_description": "プレミアム機能を使用しながらも基本ユーザーのように偽装して疑いを避けるか、広告を維持して購読中であることを隠します。",
+    "feature5_title": "侵入検知（近日公開）",
+    "feature5_description": "PIN入力エラー時に試行時間と映像・音声を記録し、不正アクセスを検知します。",
+    "feature6_title": "サーバー非保存原則",
+    "feature6_description": "すべての会話とコンテンツはサーバーに保存されず、あなたのデバイスにのみ安全に保管されます。"
+  },
+  "Security": {
+    "title": "私たちの約束: 真のプライバシー保護",
+    "subtitle": "Off The Recordは、コンテンツの保護だけでなく、プライバシーを望むという事実そのものも保護します。これらは、あなたのデジタルライフを安全に守るための私たちの核となる原則です。",
+    "principle1_title": "ゼロ知識原則 (サーバー非保存)",
+    "principle1_description": "すべての会話とコンテンツはサーバーに保存されません。あなたのデバイスにのみ安全に保管され、たとえサーバーがハッキングされてもあなたの秘密が漏洩することはありません。",
+    "principle2_title": "強力なクライアント側暗号化",
+    "principle2_description": "あなたのすべてのデータは、デバイス内でAES-256-CBCのような最新の暗号化技術で即座に暗号化されます。PINは暗号化キーを生成するためにのみ使用され、決して保存されず、キーもメモリ内で安全に管理されます。",
+    "principle3_title": "多層セキュリティシステム＆メモリ保護",
+    "principle3_description": "基本的なPIN、二重パスワード、そして緊急時のキルスイッチまで。機密性の高い暗号化キーは、アプリ実行中もメモリ内で安全に保護され、使用後すぐに削除されます。",
+    "philosophy_title": "Off The Recordの哲学",
+    "philosophy_quote": "“私たちは、プライバシーが不信の兆候ではなく、健全な個人的空間の表現であると信じています。Off The Recordは単なるアプリではなく、デジタル時代の新しいプライバシーパラダイムを提示します。完璧な偽装、多層セキュリティ、そして緊急事態への備えまで - あなたの秘密はこれまで以上に安全です。”"
+  },
+  "Development": {
+    "title": "開発進捗状況",
+    "subtitle": "Off The Recordは現在活発に開発中です。皆様のご期待を上回るサービスをお届けするため、日々最善を尽くしております。",
+    "progressText": "63%完了"
+  },
+  "JoinUs": {
+    "title": "一緒に作りましょう、あなたのプライバシーアプリを！",
+    "subtitle": "Off The Recordは現在開発中です。あなたの貴重な意見と参加が、より良いアプリを作ります。",
+    "form_title": "限定サービスコードを受け取って、独占特典を手に入れましょう！",
+    "form_description": "限定サービスコードを受け取ると、アプリリリース後にそのコードで認証することで、初期ユーザー限定の特別な特典や招待制の限定サービスにアクセスできます。",
+    "privacy_title": "🔒 個人情報保護原則",
+    "privacy_description": "プライバシーアプリを開発する私たちは、メールアドレスやその他の個人情報を収集しません。個人情報の収集自体がプライバシー侵害の始まりだと信じているからです。代わりに、固有のサービスコードを通じて特別な特典を提供し、これは個人を特定しない完全に匿名の方法です。",
+    "feature_request_label": "機能提案 (任意)",
+    "feature_request_note": "💡 メールアドレスは収集しません。個人情報保護が私たちの核となる価値だからです。",
+    "feature_request_placeholder": "Off The Recordに追加してほしい機能があれば教えてください！",
+    "hcaptcha_missing": "hCaptcha認証を完了してください。",
+    "submit_button": "アーリーアクセスコードを取得",
+    "submit_loading": "送信中...",
+    "success_message": "{message} {inviteCode}\n\n{note}",
+    "error_message": "{message}",
+    "generic_error": "何か問題が発生しました。",
+    "connection_error": "サーバーへの接続に失敗しました。"
+  },
+  "Footer": {
+    "tagline": "完璧な偽装、完璧な秘密。<br />デジタル時代の新しいプライバシーパラダイム。",
+    "product": "製品",
+    "support": "サポート",
+    "downloads": "ダウンロード",
+    "support_center": "カスタマーサポート",
+    "faq": "よくある質問",
+    "privacy_policy": "プライバシーポリシー",
+    "ios_app": "iOS App Store",
+    "android_app": "Google Play",
+    "copyright": "© 2024 Off The Record. 全著作権所有。"
+  }
+}

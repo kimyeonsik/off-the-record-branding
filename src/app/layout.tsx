@@ -3,7 +3,7 @@ import I18nProvider from '../i18nProvider';
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="ko">
+    <html>
       <body>
         <I18nProvider>
           {children}
