@@ -78,12 +78,11 @@ export default function Home() {
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto text-center">
           <h1 className="text-6xl md:text-8xl font-bold mb-6">
-            당신의 프라이버시,<br />
-            <span className="text-primary">우리가 지켜드립니다.</span>
+            당신의 핸드폰을<br />
+            <span className="text-primary">'누가' 보고 있나요?</span>
           </h1>
           <p className="text-lg md:text-xl text-neutral-500 mb-8 max-w-3xl mx-auto">
-            디지털 시대, 당신의 소중한 비밀이 안전한가요? <br />
-            Off The Record는 당신의 프라이버시를 위한 새로운 패러다임을 제시합니다.
+            "폰 좀 줘봐." 이 한마디에 심장이 철렁한다면, 당신에게는 Off The Record가 필요합니다.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#join-us" className="bg-primary text-white px-10 py-5 rounded-lg text-lg font-semibold hover:bg-primary-darker transition-colors">
@@ -100,19 +99,19 @@ export default function Home() {
       {/* Privacy Breach Cases Section */}
       <section className="py-20 px-4 bg-neutral-100">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">당신의 프라이버시, 안전한가요?</h2>
+          <h2 className="text-4xl font-bold mb-4">이런 순간, 당신도 있었나요?</h2>
           <p className="text-xl text-neutral-500 mb-12 max-w-2xl mx-auto">
-            디지털 시대, 우리는 알게 모르게 수많은 프라이버시 침해 위험에 노출되어 있습니다.
+            피할 수 없다면, 완벽하게 숨기세요.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Case 1: 특수 관계인 (애인/배우자) 에 대한 위기 상황 - 가짜 비밀번호 */}
             <div className="bg-background border border-neutral-200 rounded-xl p-8 shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">🔐 가짜 비밀번호, 진짜 비밀을 지키다</h3>
+              <h3 className="text-xl font-semibold mb-3">🔐 보여줘도 안전한, 두 번째 비밀 공간</h3>
               <p className="text-neutral-500">
-                <span className="font-bold text-neutral-700">상황:</span> 연인이 내가 늘 사용하는 비밀번호를 알고 있어 불시에 내 폰을 확인하려 합니다.<br />
-                <span className="font-bold text-neutral-700">조치:</span> Off The Record 앱에 가짜 비밀번호를 입력합니다.<br />
-                <span className="font-bold text-neutral-700">해결:</span> 연인은 일반 메모만 보고 아무 의심 없이 돌아섭니다. 당신의 서프라이즈 계획이나 진짜 비밀은 안전하게 지켜집니다.
+                <span className="font-bold text-neutral-700">상황:</span> "폰 좀 줘봐." 연인이 내가 늘 사용하는 비밀번호를 누르고 핸드폰을 검사하기 시작합니다.<br />
+                <span className="font-bold text-neutral-700">조치:</span> 하지만 그(녀)가 알고 있는 비밀번호는 사실 가짜 비밀번호입니다.<br />
+                <span className="font-bold text-neutral-700">해결:</span> 연인은 평범한 메모만 보고 아무 의심 없이 돌아섭니다. 당신의 서프라이즈 계획이나 진짜 비밀은 안전하게 지켜집니다.
               </p>
             </div>
 
@@ -121,17 +120,17 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-3">💥 Kill Switch: 궁극의 방어</h3>
               <p className="text-neutral-500">
                 <span className="font-bold text-neutral-700">상황:</span> 연인이 당신의 앱 비밀번호가 가짜라고 의심하며 진짜 비밀번호를 강하게 요구하는 절체절명의 순간입니다.<br />
-                <span className="font-bold text-neutral-700">조치:</span> 당신은 Kill Switch 비밀번호를 알려줍니다.<br />
-                <span className="font-bold text-neutral-700">해결:</span> 앱 내의 모든 비밀 정보가 즉시 삭제되어 당신의 프라이버시는 완벽하게 지켜지고, 상대는 당신이 프리미엄 기능을 사용하지 못한다고 생각하게 됩니다.
+                <span className="font-bold text-neutral-700">조치:</span> 전혀 흔들릴 필요가 없습니다.<br />
+                <span className="font-bold text-neutral-700">해결:</span> 어떤 수단을 활용해도 가짜와 진짜 비밀번호를 구분 할 수 없습니다. 상대는 당신이 프리미엄 기능을 사용한다는 사실조차 확인 할 수 없습니다.
               </p>
             </div>
 
             {/* Case 3: 특수 관계인 (애인/배우자) 에 대한 위기 상황 - 지긋지긋한 해명 */}
             <div className="bg-background border border-neutral-200 rounded-xl p-8 shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">😮‍💨 지긋지긋한 해명, 이제 그만</h3>
+              <h3 className="text-xl font-semibold mb-3">😮‍💨 카톡까지 해명해야 하는 연애</h3>
               <p className="text-neutral-500">
-                <span className="font-bold text-neutral-700">상황:</span> 샤워하고 나왔더니, 연인이 직장 동료에게 온 평범한 메시지를 보고 추궁하며 해명을 요구합니다.<br />
-                <span className="font-bold text-neutral-700">조치:</span> Off The Record에 저장된 비밀 대화나 기록 덕분에, 당신은 더 이상 불필요한 오해에 대해 해명할 필요가 없습니다.<br />
+                <span className="font-bold text-neutral-700">상황:</span> "이 시간에 누구야?" 직장 동료에게 온 업무 카톡 하나에 분위기가 싸늘해집니다.<br />
+                <span className="font-bold text-neutral-700">조치:</span> Off The Record의 비밀 대화 기능과 위장 알림 덕분에, 당신은 더 이상 불필요한 오해에 대해 해명할 필요가 없습니다.<br />
                 <span className="font-bold text-neutral-700">해결:</span> 사적인 대화가 노출되지 않아 불필요한 감정 소모와 관계의 갈등을 피할 수 있습니다.
               </p>
             </div>
@@ -147,8 +146,8 @@ export default function Home() {
             </div>
           </div>
           <p className="text-lg text-neutral-500 mt-12 max-w-3xl mx-auto">
-            Off The Record는 이러한 문제들로부터 당신의 소중한 프라이버시를 지키기 위해 탄생했습니다.
-            우리는 당신의 비밀이 안전하게 유지될 수 있도록 돕고 싶습니다.
+            Off The Record는 당신의 소중한 프라이버시를 지키기 위해 탄생했습니다. 
+            사랑하지만, 사생활은 존중받아야 합니다. Off The Record는 당신의 건강한 개인 공간을 응원합니다.
           </p>
         </div>
       </section>
