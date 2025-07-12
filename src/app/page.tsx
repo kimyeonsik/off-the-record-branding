@@ -78,11 +78,11 @@ export default function Home() {
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto text-center">
           <h1 className="text-6xl md:text-8xl font-bold mb-6">
-            당신의 핸드폰을<br />
-            <span className="text-primary">'누가' 보고 있나요?</span>
+            당신의 폰을<br />
+            <span className="text-primary">&lsquo;누가&rsquo; 보고 있나요?</span>
           </h1>
           <p className="text-lg md:text-xl text-neutral-500 mb-8 max-w-3xl mx-auto">
-            "폰 좀 줘봐." 이 한마디에 심장이 철렁한다면, 당신에게는 Off The Record가 필요합니다.
+            &ldquo;폰 좀 줘봐.&rdquo; 이 한마디에 심장이 철렁한다면, 당신에게는 <b>Off The Record</b>가 필요합니다.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#join-us" className="bg-primary text-white px-10 py-5 rounded-lg text-lg font-semibold hover:bg-primary-darker transition-colors">
@@ -104,14 +104,15 @@ export default function Home() {
             피할 수 없다면, 완벽하게 숨기세요.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Case 1: 특수 관계인 (애인/배우자) 에 대한 위기 상황 - 가짜 비밀번호 */}
             <div className="bg-background border border-neutral-200 rounded-xl p-8 shadow-sm">
               <h3 className="text-xl font-semibold mb-3">🔐 보여줘도 안전한, 두 번째 비밀 공간</h3>
               <p className="text-neutral-500">
-                <span className="font-bold text-neutral-700">상황:</span> "폰 좀 줘봐." 연인이 내가 늘 사용하는 비밀번호를 누르고 핸드폰을 검사하기 시작합니다.<br />
-                <span className="font-bold text-neutral-700">조치:</span> 하지만 그(녀)가 알고 있는 비밀번호는 사실 가짜 비밀번호입니다.<br />
-                <span className="font-bold text-neutral-700">해결:</span> 연인은 평범한 메모만 보고 아무 의심 없이 돌아섭니다. 당신의 서프라이즈 계획이나 진짜 비밀은 안전하게 지켜집니다.
+                &ldquo;폰 좀 줘봐.&rdquo; 연인이 내가 늘 사용하는 비밀번호를 누르고 핸드폰을 검사하기 시작합니다.<br />
+                하지만 그(녀)가 알고 있는 비밀번호는 사실 가짜 비밀번호입니다.<br />
+                연인은 평범한 메모만 보고 아무 의심 없이 돌아섭니다. <br />
+                당신의 서프라이즈 계획이나 진짜 비밀은 안전하게 지켜집니다.
               </p>
             </div>
 
@@ -119,9 +120,10 @@ export default function Home() {
             <div className="bg-background border border-neutral-200 rounded-xl p-8 shadow-sm">
               <h3 className="text-xl font-semibold mb-3">💥 Kill Switch: 궁극의 방어</h3>
               <p className="text-neutral-500">
-                <span className="font-bold text-neutral-700">상황:</span> 연인이 당신의 앱 비밀번호가 가짜라고 의심하며 진짜 비밀번호를 강하게 요구하는 절체절명의 순간입니다.<br />
-                <span className="font-bold text-neutral-700">조치:</span> 전혀 흔들릴 필요가 없습니다.<br />
-                <span className="font-bold text-neutral-700">해결:</span> 어떤 수단을 활용해도 가짜와 진짜 비밀번호를 구분 할 수 없습니다. 상대는 당신이 프리미엄 기능을 사용한다는 사실조차 확인 할 수 없습니다.
+                연인이 당신의 앱 비밀번호가 가짜라고 의심하며 진짜 비밀번호를 강하게 요구하는 절체절명의 순간입니다.<br />
+                전혀 흔들릴 필요가 없습니다.<br />
+                어떤 수단을 활용해도 가짜와 진짜 비밀번호를 구분 할 수 없습니다. <br />
+                상대는 당신이 프리미엄 기능을 사용한다는 사실조차 확인 할 수 없습니다.
               </p>
             </div>
 
@@ -129,9 +131,9 @@ export default function Home() {
             <div className="bg-background border border-neutral-200 rounded-xl p-8 shadow-sm">
               <h3 className="text-xl font-semibold mb-3">😮‍💨 카톡까지 해명해야 하는 연애</h3>
               <p className="text-neutral-500">
-                <span className="font-bold text-neutral-700">상황:</span> "이 시간에 누구야?" 직장 동료에게 온 업무 카톡 하나에 분위기가 싸늘해집니다.<br />
-                <span className="font-bold text-neutral-700">조치:</span> Off The Record의 비밀 대화 기능과 위장 알림 덕분에, 당신은 더 이상 불필요한 오해에 대해 해명할 필요가 없습니다.<br />
-                <span className="font-bold text-neutral-700">해결:</span> 사적인 대화가 노출되지 않아 불필요한 감정 소모와 관계의 갈등을 피할 수 있습니다.
+                &ldquo;이 시간에 누구야?&rdquo; 직장 동료에게 온 업무 카톡 하나에 분위기가 싸늘해집니다.<br />
+                Off The Record의 비밀 대화 기능과 위장 알림 덕분에, 당신은 더 이상 불필요한 오해에 대해 해명할 필요가 없습니다.<br />
+                사적인 대화가 노출되지 않아 불필요한 감정 소모와 관계의 갈등을 피할 수 있습니다.
               </p>
             </div>
 
@@ -139,9 +141,9 @@ export default function Home() {
             <div className="bg-background border border-neutral-200 rounded-xl p-8 shadow-sm">
               <h3 className="text-xl font-semibold mb-3">🤫 카플레이 알림, 의심을 피하다</h3>
               <p className="text-neutral-500">
-                <span className="font-bold text-neutral-700">상황:</span> 직장 동료와 카풀 중, 카플레이 화면에 비밀 채팅 메시지가 알림으로 뜹니다.<br />
-                <span className="font-bold text-neutral-700">조치:</span> Off The Record는 이 알림을 &apos;[광고] 오늘까지만 AI 구독 20% 세일&apos;과 같은 평범한 광고 문구로 위장하여 보여줍니다.<br />
-                <span className="font-bold text-neutral-700">해결:</span> 동료는 아무 의심 없이 광고로 인식하고, 당신의 비밀 채팅은 안전하게 보호됩니다.
+                직장 동료와 카풀 중, 카플레이 화면에 비밀 채팅 메시지가 알림으로 뜹니다.<br />
+                Off The Record는 이 알림을 &apos;[광고] 오늘까지만 AI 구독 20% 세일&apos;과 같은 평범한 광고 문구로 위장하여 보여줍니다.<br />
+                동료는 아무 의심 없이 광고로 인식하고, 당신의 비밀 채팅은 안전하게 보호됩니다.
               </p>
             </div>
           </div>
