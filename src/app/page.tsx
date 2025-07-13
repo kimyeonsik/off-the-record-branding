@@ -66,14 +66,16 @@ export default function Home() {
             </div>
             <span className="text-xl font-bold">Off The Record</span>
           </div>
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex space-x-8">
             <a href="#features" className="hover:text-primary transition-colors">{t('Navigation.features')}</a>
             <a href="#security" className="hover:text-primary transition-colors">{t('Navigation.security')}</a>
-            <LanguageSwitcher />
           </div>
-          <a href="#join-us" className="bg-primary text-white px-6 py-2 rounded-full hover:bg-primary-darker transition-colors">
-            {t('Navigation.earlyAccess')}
-          </a>
+          <div className="hidden md:flex items-center space-x-4 justify-end">
+            <LanguageSwitcher />
+            <a href="#join-us" className="bg-primary text-white px-6 py-2 rounded-full hover:bg-primary-darker transition-colors">
+              {t('Navigation.earlyAccess')}
+            </a>
+          </div>
         </div>
       </nav>
 

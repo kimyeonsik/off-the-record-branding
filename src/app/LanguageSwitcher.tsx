@@ -13,25 +13,25 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="flex space-x-4">
-      <button 
+    <div className="flex space-x-4 text-sm"> {/* Added text-sm here */}
+      <span 
         onClick={() => handleLanguageChange('ko')}
-        className={`hover:text-primary transition-colors ${i18n.language === 'ko' ? 'text-primary font-semibold' : 'text-neutral-500'}`}
+        className={`cursor-pointer hover:text-primary transition-colors ${i18n.language === 'ko' ? 'text-primary font-semibold' : 'text-neutral-500'}`}
       >
         한국어
-      </button>
-      <button 
+      </span>
+      <span 
         onClick={() => handleLanguageChange('en')}
-        className={`hover:text-primary transition-colors ${i18n.language === 'en' ? 'text-primary font-semibold' : 'text-neutral-500'}`}
+        className={`cursor-pointer hover:text-primary transition-colors ${i18n.language === 'en' ? 'text-primary font-semibold' : 'text-neutral-500'}`}
       >
         English
-      </button>
-      <button 
+      </span>
+      <span 
         onClick={() => handleLanguageChange('ja')}
-        className={`hover:text-primary transition-colors ${i18n.language === 'ja' ? 'text-primary font-semibold' : 'text-neutral-500'}`}
+        className={`cursor-pointer hover:text-primary transition-colors ${i18n.language === 'ja' ? 'text-primary font-semibold' : 'text-neutral-500'}`}
       >
         日本語
-      </button>
+      </span>
     </div>
   );
 }
